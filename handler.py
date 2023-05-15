@@ -17,7 +17,7 @@ app = Flask( __name__ )
 #usar para Local
 #@app.route( '/hotelcancellation/predict', methods=['POST'] )
 
-@app.route( '/predict', methods=['POST'] )
+@app.route( '/hotelcancellation/predict', methods=['POST'] )
 
 def hotelcancellation_predict():
     

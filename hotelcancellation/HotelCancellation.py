@@ -4,14 +4,14 @@ import numpy as np
 
 class HotelCancellation:
     def __init__(self):
-        self.home_path                = 'C:/Users/edils/repos/hotel_chain_cancelation/'
+        self.home_path                = ''
         
-        self.hospedes_scaler          = pickle.load(open(self.home_path + 'src/features/hospedes_scaler.pkl', 'rb'))
-        self.id_scaler                = pickle.load(open(self.home_path + 'src/features/id_scaler.pkl', 'rb'))        
-        self.meses_ate_checkin_scaler = pickle.load(open(self.home_path + 'src/features/meses_ate_checkin_scaler.pkl', 'rb'))        
-        self.nacionalidade_scaler     = pickle.load(open(self.home_path + 'src/features/nacionalidade_scaler.pkl', 'rb'))        
-        self.pernoites_scaler         = pickle.load(open(self.home_path + 'src/features/pernoites_scaler.pkl', 'rb'))        
-        self.tipo_quarto_scaler       = pickle.load(open(self.home_path + 'src/features/tipo_quarto_scaler.pkl', 'rb')) 
+        self.hospedes_scaler          = pickle.load(open(self.home_path + 'features/hospedes_scaler.pkl', 'rb'))
+        self.id_scaler                = pickle.load(open(self.home_path + 'features/id_scaler.pkl', 'rb'))        
+        self.meses_ate_checkin_scaler = pickle.load(open(self.home_path + 'features/meses_ate_checkin_scaler.pkl', 'rb'))        
+        self.nacionalidade_scaler     = pickle.load(open(self.home_path + 'features/nacionalidade_scaler.pkl', 'rb'))        
+        self.pernoites_scaler         = pickle.load(open(self.home_path + 'features/pernoites_scaler.pkl', 'rb'))        
+        self.tipo_quarto_scaler       = pickle.load(open(self.home_path + 'features/tipo_quarto_scaler.pkl', 'rb')) 
         
     def data_description(self, df1):
         valores_dict = ['id',
