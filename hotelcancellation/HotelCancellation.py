@@ -106,11 +106,11 @@ class HotelCancellation:
         df5['tipo_quarto'] = df5['tipo_quarto'].map(self.tipo_quarto_scaler)
         #pickle.dump( values_quarto, open ('C:/Users/edils/repos/hotel_chain_cancellation/src/features/tipo_quarto_scaler.pkl', 'wb'))
 
-        cols_selected_tree = ['id', 'nacionalidade', 'meses_ate_checkin', 'pernoites',
-           'classificacao', 'obs_nenhuma', 'reserva_estacionamento', 'obs_1_a_3',
-           'hospedes', 'forma_reserva_agencia', 'tipo_quarto','forma_reserva_balcao']
+        #cols_selected_tree = ['id', 'nacionalidade', 'meses_ate_checkin', 'pernoites',
+        #   'classificacao', 'obs_nenhuma', 'reserva_estacionamento', 'obs_1_a_3',
+        #   'hospedes', 'forma_reserva_agencia', 'tipo_quarto','forma_reserva_balcao']
     
-        return df5[cols_selected_tree]
+        return df5
 
     def get_prediction(self, model, original_data, test_data):
         
