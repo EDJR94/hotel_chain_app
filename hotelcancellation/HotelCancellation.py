@@ -114,8 +114,8 @@ class HotelCancellation:
 
     def get_prediction(self, model, original_data, test_data):
         
-        yhat = model.predict(test_data)
+        #yhat = model.predict(test_data)
         
-        original_data['prediction'] = yhat
+        #original_data['prediction'] = yhat
         
-        return original_data.to_json(orient='records', date_format='iso')
+        return test_data.to_json(orient='records', date_format='iso')
