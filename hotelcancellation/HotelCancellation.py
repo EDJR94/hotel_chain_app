@@ -84,16 +84,16 @@ class HotelCancellation:
         #One Hot Encoding - forma_reserva
         df5 = pd.get_dummies(df5, prefix='forma_reserva', columns=['forma_reserva'], dtype=int)
 
-        df5 = df5.rename(columns={'regime_alimentacao_Café da manha':'cafe_manha',
-                           'regime_alimentacao_Café da manha e jantar':'cafe_jantar',
-                           'regime_alimentacao_Café da manha, almoco e jantar': 'cafe_almoco_jantar',
-                           'regime_alimentacao_Sem refeicao': 'sem_refeicao',
-                           'reserva_observacoes_1 a 3': 'obs_1_a_3',
-                           'reserva_observacoes_Mais de 3': 'obs_mais_3',
-                           'reserva_observacoes_Nenhuma': 'obs_nenhuma',
-                           'forma_reserva_Agência': 'forma_reserva_agencia',
-                           'forma_reserva_B2B': 'forma_reserva_b2b',
-                           'forma_reserva_Balcão': 'forma_reserva_balcao'})
+        #df5 = df5.rename(columns={'regime_alimentacao_Café da manha':'cafe_manha',
+                           #'regime_alimentacao_Café da manha e jantar':'cafe_jantar',
+                           #'regime_alimentacao_Café da manha, almoco e jantar': 'cafe_almoco_jantar',
+                           #'regime_alimentacao_Sem refeicao': 'sem_refeicao',
+                           #'reserva_observacoes_1 a 3': 'obs_1_a_3',
+                           #'reserva_observacoes_Mais de 3': 'obs_mais_3',
+                           #'reserva_observacoes_Nenhuma': 'obs_nenhuma',
+                           #'forma_reserva_Agência': 'forma_reserva_agencia',
+                           #'forma_reserva_B2B': 'forma_reserva_b2b',
+                           #'forma_reserva_Balcão': 'forma_reserva_balcao'})
         
         print(df5.columns)
 
