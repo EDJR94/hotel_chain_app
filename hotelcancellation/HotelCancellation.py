@@ -94,6 +94,9 @@ class HotelCancellation:
                            'forma_reserva_Agência': 'forma_reserva_agencia',
                            'forma_reserva_B2B': 'forma_reserva_b2b',
                            'forma_reserva_Balcão': 'forma_reserva_balcao'})
+        
+        print(df5.columns)
+
         #nacionalidade - Frequency Encoding
         df5['nacionalidade'] = df5['nacionalidade'].map(self.nacionalidade_scaler)
         #pickle.dump( values_nacionalidade, open ('C:/Users/edils/repos/hotel_chain_cancellation/src/features/nacionalidade_scaler.pkl', 'wb'))
